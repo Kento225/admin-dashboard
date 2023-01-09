@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------------------------------------------*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: 10rem 82vh;
+    gap:10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+.header{
+    grid-column: 2/3;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+.searchrow{
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    align-items: center;
+}
+.searchrow [class*=-side]{
+    display:flex;
+    gap: 30px;
+    align-items: center;
+}
+.searchrow .left-side input{
+    width: 90%;
+}
+.searchrow .right-side{
+    justify-content: center;
+}
+.profilerow{
+    grid-row:2/3;
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    align-items: center;
+    margin-top: 20px;
+}
+.profilerow [class*=-side]{
+    display:flex;
+    gap: 30px;
+    align-items: center;
+
+}
+.profile-name .small-text, .big-text{
+    margin: 0px;
+}
+.profilerow .right-side{
+    justify-self: center;
+}
+.sidebar{
+    background-color: #E75A7C;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.sidebar ul{
+    margin-bottom: 30px;
+}
+.sidebar *{
+    font-weight: bold;
+}
+
+span img{
+    width: 2.5rem;
+    vertical-align: middle;
+    margin: 5px;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar li{
+    margin-top: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 3rem;
+    gap:25px;
+    margin-bottom: 3rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    gap: 25px;
+    margin-right: 20px;
+}
+.announcements{
+    grid-row: 1/2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    margin-right: 3rem;
+    padding: 2rem;
+}
+.trending{
+    grid-row:2/3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    margin-right: 3rem;
+    padding: 2rem;
+}
+.card{
+    border:solid 2px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+.card h3{
+    font-weight: bold;
+}
+.card *{
+    margin-top: 20px;
+}
+h4{
+    font-weight: bold;
+    font-size: 80%;
+}
+.an{
+    padding: 1rem;
+}
+.an p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size:75%;
+}
+#middle{
+    border-top: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+
+}
